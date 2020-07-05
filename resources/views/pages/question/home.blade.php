@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header">
-                <a href="/pertanyaan/create" class="btn btn-primary form-control"><i class="fa fa-plus"></i> Add</a>
+                <a href="/pertanyaan/create" class="btn btn-primary"><i class="fa fa-plus"></i> Add</a>
             </div>
             <!-- /.card-header -->
             <div class="card-body">

@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'QuestionController@index');
 
 Route::get('/pertanyaan', 'QuestionController@index');
 Route::get('/pertanyaan/create', 'QuestionController@create');
@@ -23,5 +21,7 @@ Route::get('/pertanyaan/{id}/edit', 'QuestionController@edit');
 Route::put('/pertanyaan/{id}', 'QuestionController@update');
 Route::delete('/pertanyaan/{id}', 'QuestionController@destroy');
 
+Route::get('/jawaban', 'AnswerController@index');
 Route::get('/jawaban/{id}', 'AnswerController@index');
+
 Route::post('/jawaban/{id}', 'AnswerController@store');
